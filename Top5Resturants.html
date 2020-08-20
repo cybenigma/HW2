@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MY TOP 5 RESTURANTS</title>
+      <style>
+          body {
+            font-size: 28px;
+          }
+
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+          }
+
+          li {
+            float: left;
+          }
+
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+
+          li a:hover {
+            background-color: #111;
+          }
+
+          .active {
+            background-color: #4CAF50;
+          }
+    </style>
+  </head>
+  <body>
+
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="my_kitchen.html">MY KITCHEN</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    <section>
+      <div>
+        <h1>MY TOP 5 RESTURANTS</h1>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <a href="http://charlottefigtree.com/">
+          <img border="0" alt="Fig Tree Resturant" src="figtree.jpg">
+        </a>
+        <h1>ONE - FIG TREE</h1>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <a href="https://www.thecapitalgrille.com/locations/nc/charlotte/charlotte/8011">
+          <img border="0" alt="Capital Grill Resturant" src="CapitalGrille.jpg">
+        </a>
+        <h1>TWO - CAPITAL GRILLE</h1>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <a href="https://www.zenasianfusion.com/">
+          <img border="0" alt="Zen Fusion Resturant" src="ZenFusion.jpg">
+        </a>
+        <h1>THREE - ZEN FUSION</h1>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <a href="http://www.dresslersrestaurant.com/metropolitan/">
+          <img border="0" alt="Dressler's Resturant" src="Dresslers.jpg">
+        </a>
+        <h1>FOUR - DRESSLERS</h1>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <a href="https://conterestaurantgroup.com/luce/">
+          <img border="0" alt="Luce Resturant" src="Luce.jpg">
+        </a>
+        <h1>FIVE - LUCE</h1>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h1>MY KITCHEN<h1>
+        <a href="my_kitchen.html">
+          <img border="0" alt="My Kitchen" src="MyKitchen.jpg">
+        </a>
+        <h1>BONUS - MY KITCHEN</h1>
+      </div>
+    </section>
+
+
+    <section class="quickform">
+        <h1>Resturant LIST LOGIN:</h1>
+        <h2>Please Input your Email and Password</h2>
+
+        <!-- Two ways of using a Label-->
+        <!-- Nested -->
+        <!--  for and id connection-->
+
+        <form action="http://www.google.com" method="get">
+
+          <label>
+             EMAIL:
+             <input type="email" name="useremail" value="Email Here">
+          </label>
+
+
+          <label >
+            PASSWORD:
+          <input type="password" name="password" placeholder="Password">
+          </label>
+
+          <!-- Validation -->
+          <!--  Usually do a lot more validation with Backend-->
+          <!--  Use the attribute: required to require input-->
+
+          <label for="userinput">TEXT:</label>
+
+
+          <input type="text" id="userinput"name="input" placeholder="Enter Text Here" required>
+
+          <input type="submit" >
+
+        </form>
+    </section>
+
+  </body>
+</html>
